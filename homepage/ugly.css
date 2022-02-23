@@ -1,15 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 :root {
-    --bg: #dfe4ea;
+    --bg1: #EDE574;
+    --bg2: #7bed9f;
     --nav: #ff4757;
     --c1: #ff4757;
     --c2: #1e90ff;
     --c3: #ffa502;
+    --sidebar: #833471;
+    --sidebar-p: #FFC312;
+    --sidebar-h1: #12CBC4;
+    --sidebar-h3: #A3CB38;
+    --header: #006266;
+    --highlight: #78e08f;
 }
 
 body {
-    background: linear-gradient(45deg, #EDE574, #7bed9f);
+    background: linear-gradient(45deg, var(--bg1), var(--bg2));
     font-family: Permanent Marker, Roboto, Arial;
 }
 
@@ -47,7 +54,7 @@ img {
     right: 0;
     text-align: left;
     border: 5px solid var(--c2);
-    background: #833471;
+    background: var(--sidebar);
     text-align:center;
 }
 
@@ -57,23 +64,23 @@ img {
 
 .sidebar h1 {
     text-decoration:  underline;
-    color: #12CBC4;
+    color: var(--sidebar-h1);
 }
 
 .sidebar h3 {
-    color: #A3CB38;
+    color: var(--sidebar-h3);
     font-size: 1.4rem;
     margin:0;
     padding:0;
 }
 
 .sidebar p {
-    color:#FFC312;
+    color: var(--sidebar-p);
     font-size: 1.1rem;
 }
 
 .card-highlight {
-    color: var(--c3)
+    color: var(--c3);
 }
 
 ul {
@@ -88,7 +95,7 @@ li {
 
 .header {
     width: 64vw;
-    background-color: #006266;
+    background-color: var(--header);
     position: relative;
     margin-top:8rem;
     display:flex;
@@ -122,7 +129,7 @@ li {
 }
 
 .card {
-    background-color:#000;
+    background-color:black;
     width: 50rem;
     margin-top:0.3rem;
     margin-bottom: 2rem;
@@ -154,7 +161,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     letter-spacing: 1px;
     margin-right: 2.5rem;
@@ -165,7 +172,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color:#78e08f;
+    color:var(--highlight);
     transition: 0.3s;
 
 }
@@ -183,7 +190,7 @@ nav ul li a:after {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #78e08f;
+    background-color: var(--highlight);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
